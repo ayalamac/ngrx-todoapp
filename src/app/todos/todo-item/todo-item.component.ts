@@ -27,7 +27,7 @@ export class TodoItemComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.todo);
+    // console.log(this.todo);
 
     this.checkCompletado = new FormControl( this.todo.completada );
     this.textEditar = new FormControl( this.todo.descripcion, Validators.required);

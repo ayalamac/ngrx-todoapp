@@ -31,7 +31,7 @@ export class TodoFooterComponent implements OnInit {
 
     this.store.subscribe( state => {
 
-      console.log('Filtro actual: ', state.filtro);
+      // console.log('Filtro actual: ', state.filtro);
       this.currentFilter = state.filtro;
       this.tareasPendientes = state.todos.filter( todo => todo.completada === false ).length;
       this.tareasCompletadas = state.todos.length - this.tareasPendientes;
